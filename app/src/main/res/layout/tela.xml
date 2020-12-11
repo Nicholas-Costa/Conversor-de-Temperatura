@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto1"
+        android:layout_centerHorizontal="true"
+        android:text="Celsius (ºC):"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto2"
+        android:layout_centerHorizontal="true"
+        android:text="Fahrenheit (ºF):"
+        android:textSize="30dp"
+        android:layout_below="@id/edit1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit1"
+        android:layout_below="@id/texto1"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit2"
+        android:layout_below="@id/texto2"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="Celsius(ºC) para Fahrenheit(ºF)"
+        android:layout_below="@id/edit2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="Fahrenheit(ºF) para Celsius(ºC)"
+        android:layout_below="@id/btn1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn2"
+        android:text=""
+        android:textSize="30dp"
+        />
+
+</RelativeLayout>
